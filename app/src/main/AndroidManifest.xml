@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.veradebora.dds">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.Home"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.Billing"
+            android:label="@string/title_activity_billing"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.Wallet"
+            android:label="@string/title_activity_wallet"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.Login" />
+        <activity
+            android:name=".ui.reqvm"
+            android:label="@string/title_activity_reqvm"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.reqvm2"
+            android:label="@string/title_activity_reqvm2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.managevm"
+            android:label="@string/title_activity_managevm"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.selectos"
+            android:label="@string/title_activity_selectos"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.selectdefsize"
+            android:label="@string/title_activity_selectdefsize"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.fincust"
+            android:label="@string/title_activity_fincust"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.findef"
+            android:label="@string/title_activity_findef"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

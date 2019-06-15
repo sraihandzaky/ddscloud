@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.veradebora.dds.ui.voucher">
+
+  <!-- TODO: Update blank fragment layout -->
+
+
+  <ListView
+      android:id="@+id/topuphistolv"
+      android:layout_marginTop="15dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginVertical="30dp"
+      android:layout_marginHorizontal="20dp"
+      android:background="#ddd">
+  </ListView>
+
+</LinearLayout>

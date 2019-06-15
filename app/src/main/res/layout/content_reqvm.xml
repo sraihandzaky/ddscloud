@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.reqvm">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Operating System"
+        android:paddingTop="70dp"
+        android:textSize="20dp"
+        android:layout_marginStart="5dp"
+        android:textColor="#000"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        android:orientation="horizontal"
+        android:layout_below="@id/textView4"
+        android:layout_marginTop="20dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose VM Size"
+        android:textSize="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#000"/>
+
+    <in.goodiebag.carouselpicker.CarouselPicker
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:background="#ddd"
+        android:id="@+id/carousel2">
+    </in.goodiebag.carouselpicker.CarouselPicker>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finalize and Create"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:layout_marginStart="5dp"
+        android:textColor="#000"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="VM name.."/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request VM"
+        android:onClick="reqvm"
+        android:background="#00b5ad"
+        android:layout_marginTop="20dp"
+        android:textColor="#f0f0f0"/>
+    </LinearLayout>
+
+
+
+</ScrollView>

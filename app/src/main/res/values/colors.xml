@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="kofi">#6F4E37</color>
+    <color name="dkofi">#4B3621</color>
+    <color name="dgrin">#0c514e</color>
+    <color name="lgrin">#00b5ad</color>
+</resources>

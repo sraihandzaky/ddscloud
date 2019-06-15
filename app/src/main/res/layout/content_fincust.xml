@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.fincust"
+    tools:showIn="@layout/app_bar_fincust">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Operating System: "
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:layout_marginBottom="15dp"/>
+
+        <ImageView
+            android:id="@+id/osimej"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/osnem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Debian "
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="25dp"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Choose VM Size"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtvcpu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="13dp"
+            android:paddingLeft="20dp"
+            android:text="vCpu"
+            android:textSize="18dp" />
+
+
+        <SeekBar
+            android:id="@+id/seek1"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:max="1" />
+
+        <TextView
+            android:id="@+id/txtram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="13dp"
+            android:paddingLeft="20dp"
+            android:text="RAM"
+            android:textSize="18dp" />
+
+        <SeekBar
+            android:id="@+id/seek2"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:max="2" />
+
+        <TextView
+            android:id="@+id/txtstorage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="13dp"
+            android:paddingLeft="20dp"
+            android:text="Storage"
+            android:textSize="18dp" />
+
+        <SeekBar
+            android:id="@+id/seek3"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:max="2" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:text="Finalize and Create"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/vmnem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="VM Name.."
+            android:inputType="textPersonName" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bekgron"
+            android:onClick="finish"
+            android:text="Request VM"
+            android:textColor="#f0f0f0" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.veradebora.dds.ui.Login"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_weight=" .6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:background="@drawable/gradient">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/log0"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight=" .3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="343dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="333dp"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:ems="10"
+                android:hint="NIK"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="333dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/loginbtn"
+                android:onClick="login"
+                android:text="Login"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:text="Copyright © 2018 | PT. Telekomunikasi Indonesia, Tbk - Divisi Digital Service"
+        android:textAlignment="center"
+        android:textSize="30px"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.selectdefsize"
+    tools:showIn="@layout/app_bar_selectdefsize"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Choose VM Size:"
+        android:textColor="#000"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="192dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="27dp"
+            android:layout_marginBottom="10dp"
+            android:text="1 VCPUs
+1 GB RAM
+20 GB Storage"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="147dp"
+            android:onClick="next1"
+            android:background="@drawable/bekgron"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="192dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/btn3"
+            android:text="2 VCPUs
+2 GB RAM
+20 GB Storage"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="192dp"
+            tools:layout_editor_absoluteY="147dp"
+            android:onClick="next2"
+            android:background="@drawable/bekgron"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="192dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/btn4"
+            android:text="2 VCPUs
+2 GB RAM
+80 GB Storage"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="247dp"
+            android:onClick="next3"
+            android:background="@drawable/bekgron"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="192dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/btn"
+            android:text="2 VCPUs
+4 GB RAM
+40 GB Storage"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="192dp"
+            tools:layout_editor_absoluteY="247dp"
+            android:onClick="next4"
+            android:background="@drawable/bekgron"
+            android:layout_marginBottom="10dp"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+
+</LinearLayout>

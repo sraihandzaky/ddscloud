@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">DDS Cloud</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_billing">Billing</string>
+    <string name="title_activity_wallet">Wallet</string>
+    <string name="wallet">wallet</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="title_activity_reqvm">reqvm</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string-array name="list_items">
+        <item>test__Debian 8x64</item>
+        <item>test again__CentOS 7x64</item>
+        <item>should i test again?__CentOS 7x64</item>
+        <item>test final__Ubuntu 16.04.2x64</item>
+        <item>test final 2.0__Debian 8x64</item>
+        <item>test fix__Debian 8x64</item>
+
+    </string-array>
+    <string name="title_activity_reqvm2">reqvm2</string>
+    <string name="title_activity_managevm">managevm</string>
+    <string name="title_activity_selectos">selectos</string>
+    <string name="title_activity_selectdefsize">selectdefsize</string>
+    <string name="title_activity_fincust">fincust</string>
+    <string name="title_activity_findef">findef</string>
+</resources>

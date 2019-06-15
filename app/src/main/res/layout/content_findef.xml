@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.findef"
+    tools:showIn="@layout/app_bar_findef"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Operating System: "
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:id="@+id/osnem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Debian "
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="25dp"/>
+    <TextView
+        android:id="@+id/spek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VM Size: "
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:layout_marginBottom="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vcpu"
+            android:text="vCPU: "
+            android:textSize="18dp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/memory"
+            android:text="Memory: "
+            android:textSize="18dp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/storage"
+            android:text="Storage: "
+            android:textSize="18dp"
+            android:textColor="#000"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cost:"
+        android:textColor="#000"
+        android:textSize="30dp"/>
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=".... Rp/Hour "
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="25dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose VM name:"
+        android:textColor="#000"
+        android:textSize="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="VM name.."
+        android:id="@+id/vmnem"/>
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request VM"
+        android:background="@drawable/bekgron"
+        android:textColor="#fff"
+        android:layout_marginTop="15dp"
+        android:onClick="finish"/>
+
+</LinearLayout>

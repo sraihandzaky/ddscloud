@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.veradebora.dds.ui.Wallet"
+    tools:showIn="@layout/app_bar_wallet"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lgrin"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextColor="@android:color/black">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabChats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Up History" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voucher History" />
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5" />
+    <RelativeLayout
+        android:id="@+id/rela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lgrin"
+        android:paddingTop="10dp"
+        android:paddingHorizontal="10dp">
+
+        <TextView
+            android:id="@+id/saldo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Balance"
+            android:textColor="#fff"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/duit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/saldo"
+            android:text="Rp 99.999"
+            android:textSize="20dp"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/tu"
+            android:layout_width="130dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/duit"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="20dp"
+            android:onClick="reqtopup"
+            android:text="Top Up" />
+
+        <Button
+            android:id="@+id/vc"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/duit"
+            android:onClick="voucher"
+            android:layout_toRightOf="@+id/tu"
+            android:text="Voucher Code" />
+
+    </RelativeLayout>
+
+</LinearLayout>
